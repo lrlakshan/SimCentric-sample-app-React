@@ -58,7 +58,6 @@ class Canvas extends Component {
      }
 
     drawingTypeSelect = (param) => {
-        console.log("props", param);
         this.setState({clickedBtn: param});
         this.drawFunction(param);
     }
@@ -102,7 +101,6 @@ class Canvas extends Component {
          }
 
          function onClick(e) {
-             console.log("my param", param);
              if(intervalID !== undefined){
                 clearInterval(intervalID);
              }
